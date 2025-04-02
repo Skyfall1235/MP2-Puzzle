@@ -10,6 +10,11 @@ public class MainMenuUI : MonoBehaviour
     {
         LaunchScene(SceneName);
     }
+    public void NextLevel()
+    {
+        int sceneInt = SceneManager.GetActiveScene().buildIndex + 1;
+        LaunchScene(sceneInt);
+    }
     public void QuitGame()
     {
         Application.Quit();
@@ -19,5 +24,10 @@ public class MainMenuUI : MonoBehaviour
     {
         Debug.Log($"Loading scene {SceneName}");
         SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+    }
+    private void LaunchScene(int sceneInt)
+    {
+        Debug.Log($"Loading scene {SceneName}");
+        SceneManager.LoadScene(sceneInt, LoadSceneMode.Single);
     }
 }

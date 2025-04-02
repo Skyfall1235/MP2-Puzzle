@@ -2,15 +2,5 @@ using UnityEngine;
 
 public class Deathzone : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //just a collision thing to notify the game mamager and the player to die and reset. gamem manger will handle UI.
 }
